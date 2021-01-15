@@ -18,17 +18,32 @@
         <div>Cart</div>
     </div>
     <div class="section">
-        <div class="form_container">
+        <div class="headline_container">
+            <h1>Panny headline</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eius quidem repellendus aliquam molestias odit! 
+                </p>
+                <button class="heading_btn">Coming Soon</button>
+        </div>
+        <div class="form_container">            
             <form action="">
                 <label for="">
                     First Name
-                    <input style="width: 96%; padding: 5px;" type="text">
-                </label><br><br>
+                    <input class="textfild" type="text">
+                </label><br/><br/>
                 <label for="">
                     Last Name
-                    <input  style="width: 96%; padding: 5px;" type="text">
-                </label><br>
-            </form>
+                    <input class="textfild" type="text">
+                </label><br/><br/>
+                <label for="">
+                    Email address
+                    <input class="textfild" type="text">
+                </label><br/><br/>
+                <label for="">
+                    Phone
+                    <input class="textfild" type="text">
+                </label><br/>                
+            </form>           
         </div>
     </div>
     <div class="popup model" id="model">
@@ -47,50 +62,49 @@
                         <small>Flat</small><br>
                         Rs.500 <small>Off</small>
                     </h2>
-                    <h3 class="coupan_code" id="code2">
+                    <h3 class="coupan_code" id="code1">
                         MMTFLAT500 <br>
-                        <small class="text-muted">*Valid on min 3 ticket booking</small>
                     </h3>
-                    <button class="copy_btn" id="handleCopy">COPY CODE</button>
+                    <small class="text-muted">*Valid on min 3 ticket booking</small>
+                    <button class="copy_btn" onclick="handleCopy('code1',id)" id="1">COPY CODE</button>
                 </div>
 
 <!-- ----------------COUPAN CODE CONTAINER-2----------- -->
                 <div class="coupan_container">
                     <h2>
                         <small>Flat</small><br>
-                        Rs.500 <small>Off</small>
+                        Rs.300 <small>Off</small>
                     </h2>
                     <h3 class="coupan_code" id="code2">
-                        MMTFLAT500 <br>
-                        <small class="text-muted">*Valid on min 3 ticket booking</small>
+                        PLYMMT300 <br>
                     </h3>
-                    <button id="handleCopy">COPY CODE</button>
+                    <small class="text-muted">*Valid on min 3 ticket booking</small>
+                    <button class="copy_btn" onclick="handleCopy('code2',id)" id="2">COPY CODE</button>
                 </div>
 
 <!-- ----------------COUPAN CODE CONTAINER-3----------- -->
                 <div class="coupan_container">
                     <h2>
                         <small>Flat</small><br>
-                        Rs.500 <small>Off</small>
+                        Rs.150 <small>Off</small>
                     </h2>
-                    <h3 class="coupan_code" id="code2">
-                        MMTFLAT500 <br>
-                        <small class="text-muted">*Valid on min 3 ticket booking</small>
+                    <h3 class="coupan_code" id="code3">
+                        FLTMMT150 <br>
                     </h3>
-                    <button id="handleCopy">COPY CODE</button>
+                    <small class="text-muted">*Valid on min 3 ticket booking</small>
+                    <button class="copy_btn" onclick="handleCopy('code3',id)" id="3">COPY CODE</button>
                 </div>
 
 <!-- ----------------COUPAN CODE CONTAINER-4----------- -->
                 <div class="coupan_container">
                     <h2>
-                        <small>Flat</small><br>
-                        Rs.500 <small>Off</small>
+                        <small>UPTO</small><br>
+                        Rs.2500 <small>Off</small>
                     </h2>
-                    <h3 class="coupan_code" id="code2">
-                        MMTFLAT500 <br>
-                        <small class="text-muted">*Valid on min 3 ticket booking</small>
+                    <h3 class="coupan_code" id="code4">
+                        MMTBEST <br>
                     </h3>
-                    <button id="handleCopy">COPY CODE</button>
+                    <button class="copy_btn" style="margin-top: 34px;" id="4" onclick="handleCopy('code4',id)">COPY CODE</button>
                 </div>
             </div>             
         </div>

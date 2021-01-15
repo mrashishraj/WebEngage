@@ -4,19 +4,35 @@ function handleClose(){
     [0].classList.add("close")
 }
 
-var handleCopy = document.getElementById("handleCopy")
-handleCopy.addEventListener("click",function(){
-    var code1 = document.getElementById("code2").innerText
-    copyToClipBoard(code1)
-})
+function handleCopy(code,id){
+    var copiedCode = document.getElementById(code).innerText
+    copyToClipBoard(copiedCode)
+    handleBtnDisable(id)
+}
 
-function copyToClipBoard(text){
+function copyToClipBoard(copiedCode){
     const textarea = document.createElement("textarea")
     textarea.setAttribute('readonly','');
-    textarea.value = text
+    textarea.value = copiedCode
     textarea.style.position = "absolute"
     document.body.appendChild(textarea)
     textarea.select()
     document.execCommand("copy")
     document.body.removeChild(textarea)
+}
+
+function handleBtnDisable(id){
+    var allBtn = document.getElementsByClassName('copy_btn')
+    for(var i=0;i<allBtn.length;i++){
+        if(allBtn[i].id===id){
+            allBtn[i].classList.add("disable")
+            allBtn[i].innerText="CODE COPIED"
+        }else if(allBtn[i].id !== id){
+            allBtn[i].classList.remove("disable")
+            allBtn[i].innerText="COPY CODE"
+
+        }
+        console.log(allBtn[i].id,id)    
+
+    }
 }

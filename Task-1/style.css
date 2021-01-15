@@ -7,8 +7,9 @@ body{
 }
 
 .navbar{
-    padding: 18px;
-    background-color: aqua;
+    padding: 12px;
+    background-color: rgb(85, 85, 179); 
+    background-image: linear-gradient(to top right, rgb(48, 48, 175), pink);
     display: flex;
     flex-direction: row;
 }
@@ -25,13 +26,34 @@ body{
     margin-top: 0%;
 }
 
+.headline_container{
+    height: 300px;
+    width: 500px;
+    margin-left: 34%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.heading_btn{
+    padding: 10px;
+    width: 150px;
+    color: blue;
+    border: 0.5px solid blue;
+}
+
 .form_container{
     height: 300px;
     width: 500px;
-    background-color:blueviolet;
-    margin-left: 33%;
-    margin-top: 10%;
+    background-color: rgb(85, 85, 179);
+    background-image: linear-gradient(to top right, rgb(48, 48, 175), pink);    margin-left: 33%;
     padding: 1%;
+    margin-top: 15px;
+}
+
+.textfild{
+    width: 96%; 
+    padding: 8px;
 }
 
 .model{
@@ -41,16 +63,15 @@ body{
     top: -600px;
     padding: 20px;
     position: fixed;
-    background-color: white;
-    
+    background-color: white;    
 }
 
 .popup{
     animation-name: sliderOpen;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 0s;
+    animation-delay: 3s;
 }
 
 @keyframes sliderOpen{
@@ -61,7 +82,7 @@ body{
 
 .popup.close{
     animation-name: sliderClose;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-delay: 0s;
@@ -94,6 +115,11 @@ body{
     border-radius: 10px;
 }
 
+.coupan_code{
+    padding: 0;
+    margin: 0;
+}
+
 .text-muted{
     font-size: 12px;
     color: rgb(31, 168, 168);
@@ -102,4 +128,14 @@ body{
 
 .copy_btn{
     border: none;
+    padding: 13px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-top: 15px;
+    
+}
+
+.copy_btn.disable{
+    background-color: rgb(26, 224, 231);
 }
