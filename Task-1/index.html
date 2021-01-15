@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div>Tour</div>
+        <div>Product</div>
+        <div>Features</div>
+        <div>Enterprise</div>
+        <div>Support</div>
+        <div>Pricing</div>
+        <div>Cart</div>
+    </div>
+    <div class="section">
+        <div class="form_container">
+            <form action="">
+                <label for="">
+                    First Name
+                    <input style="width: 96%; padding: 5px;" type="text">
+                </label><br><br>
+                <label for="">
+                    Last Name
+                    <input  style="width: 96%; padding: 5px;" type="text">
+                </label><br>
+            </form>
+        </div>
+    </div>
+    <div class="popup model" id="model">
+        <div class="container">
+
+            <div>
+                <h1>More Deals For You!</h1>
+                <p>More discount for your flight</p>
+            </div>
+
+            <div class="coupan_row">
+
+<!-- ----------------COUPAN CODE CONTAINER-1----------- -->
+                <div class="coupan_container">
+                    <h2>
+                        <small>Flat</small><br>
+                        Rs.500 <small>Off</small>
+                    </h2>
+                    <h3 class="coupan_code" id="code2">
+                        MMTFLAT500 <br>
+                        <small class="text-muted">*Valid on min 3 ticket booking</small>
+                    </h3>
+                    <button class="copy_btn" id="handleCopy">COPY CODE</button>
+                </div>
+
+<!-- ----------------COUPAN CODE CONTAINER-2----------- -->
+                <div class="coupan_container">
+                    <h2>
+                        <small>Flat</small><br>
+                        Rs.500 <small>Off</small>
+                    </h2>
+                    <h3 class="coupan_code" id="code2">
+                        MMTFLAT500 <br>
+                        <small class="text-muted">*Valid on min 3 ticket booking</small>
+                    </h3>
+                    <button id="handleCopy">COPY CODE</button>
+                </div>
+
+<!-- ----------------COUPAN CODE CONTAINER-3----------- -->
+                <div class="coupan_container">
+                    <h2>
+                        <small>Flat</small><br>
+                        Rs.500 <small>Off</small>
+                    </h2>
+                    <h3 class="coupan_code" id="code2">
+                        MMTFLAT500 <br>
+                        <small class="text-muted">*Valid on min 3 ticket booking</small>
+                    </h3>
+                    <button id="handleCopy">COPY CODE</button>
+                </div>
+
+<!-- ----------------COUPAN CODE CONTAINER-4----------- -->
+                <div class="coupan_container">
+                    <h2>
+                        <small>Flat</small><br>
+                        Rs.500 <small>Off</small>
+                    </h2>
+                    <h3 class="coupan_code" id="code2">
+                        MMTFLAT500 <br>
+                        <small class="text-muted">*Valid on min 3 ticket booking</small>
+                    </h3>
+                    <button id="handleCopy">COPY CODE</button>
+                </div>
+            </div>             
+        </div>
+
+        <div>
+            <button onclick="handleClose()">X</button> 
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
